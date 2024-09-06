@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator Layout with IDS</title>
+    <style>
+        .calculator {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 10px; /* Space between buttons */
+            width: 150px; /* Set width for the calculator */
+            margin: 20px auto; /* Center it on the page */
+        }
+            .calculator div {
+        border: 2px solid black;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: lightgray;
+        cursor: pointer;
+        transform: translateZ(0); /* Trigger GPU acceleration */
+    }
+            .calculator div:hover {
+            background-color: #ddd; /* Lighter color on hover */
+        }
+        .input-container {
+            text-align: center; /* Center align the input fields */
+            margin-top: 20px; /* Space above the inputs */
+        }
+        .input-container input {
+            padding: 10px;
+            width: 100px;
+            margin: 5px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Calculator layout with IDs for each number -->
+    <div class="calculator">
+        <div id="1">1</div>
+        <div id="2">2</div>
+        <div id="3">3</div>
+        <div id="4">4</div>
+        <div id="5">5</div>
+        <div id="6">6</div>
+        <div id="7">7</div> 
+        <div id="8">8</div>
+        <div id="9">9</div>
+        <div id="+">+</div>
+        <div id="-">-</div>
+        <div id="*">*</div>
+        <div id="=">=</div>
+    </div>
+
+    <!-- Input fields below the calculator -->
+    <div class="input-container">
+        <input type="text" placeholder="Result" id = "0">
+    </div>
+    
+</body>
+</html>
+<script src="index.js">
+
+</script>
